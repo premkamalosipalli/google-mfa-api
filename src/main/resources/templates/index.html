@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MFA Enrollment</title>
+</head>
+<body>
+<h2>MFA Enrollment</h2>
+<form action="/enroll" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" required>
+    <button type="submit">Enroll in MFA</button>
+</form>
+
+<h2>MFA Verification</h2>
+<form action="/verify" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" required>
+    <label>Enter Code:</label>
+    <input type="text" name="code" required>
+    <button type="submit">Verify Code</button>
+</form>
+</body>
+</html>

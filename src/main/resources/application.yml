@@ -1,0 +1,23 @@
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mfa_db
+    username: postgres
+    password: verity
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  secret: G6VdwFDXXbDWRdS92gRb8mHY+KbIw59b9XjRkC6/h48=
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
